@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">My Portfolio</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-text">
+                <h2>Hi, I'm <span class="highlight">Kushal Gurjar</span></h2>
+                <p>Student at IIIT Sonepat, Aspiring Web Developer</p>
+                <p>I am passionate about creating user-friendly and interactive web experiences. Let's work together and build something great!</p>
+                <button class="btn" onclick="scrollToSection('projects')">View My Work</button>
+            </div>
+            <div class="hero-image">
+                <img src="photo.jpg" alt="Kushal Gurjar">
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-description">Hello! I'm a student at IIIT Sonepat. I love building beautiful and functional websites that make a real impact. I am eager to continue learning and working on projects that contribute something valuable to the community.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <ul class="skills-list">
+                <li><span>HTML5 & CSS3</span></li>
+                <li><span>JavaScript</span></li>
+                <li><span>C++ Programming</span></li>
+                <li><span>Problem Solving: Leetcode</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-grid" style="cursor: pointer;">
+                <a href="https://zaaaptrix.github.io/AmazonClone/">
+                    <div class="project-card" id="Clone">
+                        <h3>Amazon's Clone</h3>
+                        <p>Built Amazon's Clone From Scratch</p>
+                    </div>
+                </a>
+
+                <a href="https://zaaaptrix.github.io/RockPaperScissors/">
+                    <div class="project-card" id="RPS">
+                        <h3>Rock-Paper-Scissors</h3>
+                        <p>The Coolest Game</p>
+                    </div>
+                </a>
+
+                <a href="https://zaaaptrix.github.io/TicTacToe/">
+                    <div class="project-card" id="TTT">
+                        <h3>Tic-Tac-Toe</h3>
+                        <p>Enhance your Brain Skills - Play this game</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+    
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Kushal Gurjar. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
